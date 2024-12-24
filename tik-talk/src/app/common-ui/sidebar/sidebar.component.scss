@@ -1,0 +1,40 @@
+:host{
+    padding: 20px 12px;
+    background: var(--dark-color);
+}
+.logo{
+    width: 74px;
+    height: 74px;
+}
+
+.main-menu-list{
+    display: grid;
+    grid-gap: 8px;
+
+}
+.menu-item{
+    padding: 16px 12px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: var(--light-color);
+    display: grid;
+    grid-template-columns: 16px 1fr max-content;
+    grid-gap: 12px;
+    font-weight: 700;
+    font-family: "JetBrains Mono", monospace;
+    line-height: 24px;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    transition: 0.2s;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus-visible{
+        background: var(--hover-color);
+        color: var(--primary-color);
+    }
+
+}

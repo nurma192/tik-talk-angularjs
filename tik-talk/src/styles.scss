@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+//font-family: "JetBrains Mono", monospace;
+@import "margins";
+
+:root {
+    --dark-color: #000;
+    --light-color: #fff;
+    --primary-color: #ae7aff;
+    --gray-color: #5f646d;
+    --hover-color: #161616;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+body {
+    //background: var(--dark-color);
+    font-family: "JetBrains Mono", monospace;
+    color: var(--light-color);
+    background-image: url('/assets/images/back_image.png');
+}
+
+.skill-tag {
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    border: 1px solid var(--light-color);
+    border-radius: 4px;
+    height: 24px;
+}
+
+.btn {
+    width: 100%;
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid var(--dark-color);
+    background: var(--primary-color);
+    color: var(--dark-color);
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-shadow {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: -4px;
+        background: var(--gray-color);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 4px;
+    }
+}
+
+.tt-control-label {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.tt-input {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--light-color);
+    border-radius: 4px;
+    padding: 12px 20px;
+    background: var(--dark-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--light-color);
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 8px;
+}
